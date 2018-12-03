@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Career Guidance</title>
+<style>
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width:100%
+}
+th, td {
+    padding: 10px;
+
+}
+
+</style>
+</head>
+<body bgcolor="pink">
+<h1><u><a name="list"></a>List of School</u></h1>
+
+<table style="height: 139px;" width="587">
+<tbody>
+<tr>
+<td style="width: 110px;">S.NO</td>
+<td style="width: 110px;">School</td>
+<td style="width: 110px;">Location</td>
+<td style="width: 111px;">Website Fees</td>
+<td style="width: 112px;">Start Year</td>
+</tr>
+<div class="table">
+  {% for c in table %}
+    <div class="c">
+<tr>
+<td style="width: 110px;"><p> {{c.no}}</p></td>
+<td style="width: 110px;"><h2>{{c.School}}</h2>
+</td>
+<td style="width: 110px;"><p> {{c.Location}}</p></td>
+<td style="width: 111px;"><p>{{c.SchoolFee}}</p></td>
+<td style="width: 112px;"><p>{{c.StartYear}}</p></td>
+</tr>
+{% endfor %}
+</div>
+</div>
+</tbody>
+</table>
+
+<br><br><br><br><br>
+
+</body>
+</html>
