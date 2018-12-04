@@ -13,7 +13,7 @@ urlpatterns = [
     url(r'^Resister/',include('Resister.urls')),
     url(r'^Resister2/',include('Resister2.urls')),
     url(r'^table/',include('table.urls')),
-
+    url(r'^about/',include('about.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
