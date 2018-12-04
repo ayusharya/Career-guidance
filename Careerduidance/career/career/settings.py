@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'Resister',
     'Resister2',
     'table',
+    'about',
 ]
 
 MIDDLEWARE = [
