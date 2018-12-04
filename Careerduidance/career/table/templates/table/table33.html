@@ -1,3 +1,4 @@
+{% load static from staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,10 +15,14 @@ th, td {
     padding: 10px;
 
 }
-
+body{
+background-image:url(/static/table3.jpg);
+background-size:cover;
+background-attachment:fixed;
+}
 </style>
 </head>
-<body bgcolor="pink">
+<body>
 <h1><u><a name="list"></a>List of School</u></h1>
 
 <table style="height: 139px;" width="587">
@@ -26,7 +31,7 @@ th, td {
 <td style="width: 110px;">S.NO</td>
 <td style="width: 110px;">School</td>
 <td style="width: 110px;">Location</td>
-<td style="width: 111px;">Website Fees</td>
+<td style="width: 111px;">School Fees</td>
 <td style="width: 112px;">Start Year</td>
 </tr>
 <div class="table">
